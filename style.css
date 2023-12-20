@@ -66,40 +66,100 @@ padding: 80px 16px 110px;
 }
 /* fine main */
 /* inizio footer bar */
-#footer_bar{
-border: 2px dotted purple;
-height:100px ;
-/* test */
-display: flex;
-justify-content: space-between;
-background-color: #212021;
-position: fixed;
-bottom: 0;
-width: 100vw;
+/* bottom-bar */
 
-}
-.sezione{
+
+#bottom-bar {
+    border: dashed blue 1px;
+
+    height: 100px;
+    /* test */
+
     display: flex;
+    justify-content: space-between;
+
+    position: fixed;
+    bottom: 0;    
+    left: 0;
+
+    width: 100%;
+
+    background-color: #222222;
 }
-.button{
+
+
+
+
+#bottom-bar .bottom-bar-left,
+#bottom-bar .bottom-bar-center,
+#bottom-bar .bottom-bar-right {
     display: flex;
-    position: relative;
+    gap: 10px;
+}
+
+
+#bottom-bar .bottom-bar-right .end-meeting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: #4a4a4a;
+    color: red;
+
+    padding: 32px 20px;
+}
+
+
+
+/* buttons */
+
+.button {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 8px 10px;
+    gap: 10px;
+
+    position: relative;
+
     height: 100%;
-    gap: 15px;
-    
-    
-    
+
+    padding: 8px 10px;
+
+    border-radius: 8px;
 }
-.icona{
-    
+
+.button:hover {
+    background-color: #4a4c4d;
+}
+
+
+.button .icon {
     font-size: 32px;
 }
-#chevron{position: absolute;
-right: 0;
-top: 30%;
+
+.button.more {
+    padding-right: 30px;
+
 }
+
+.button.more::after {
+    content: '\f077';
+
+    position: absolute;
+    right: 10px;
+
+    font-family: 'FontAwesome';
+    font-size: 10px;
+    
+}
+
+.button.active .icon {
+    color: #4bc800;
+}
+
+/* fine buttons */
 /* fine footer bar */
