@@ -70,11 +70,36 @@ padding: 80px 16px 110px;
 border: 2px dotted purple;
 height:100px ;
 /* test */
+display: flex;
+justify-content: space-between;
+background-color: #212021;
 position: fixed;
 bottom: 0;
-
 width: 100vw;
 
 }
-
+.sezione{
+    display: flex;
+}
+.button{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 10px;
+    height: 100%;
+    gap: 15px;
+    
+    
+    
+}
+.icona{
+    
+    font-size: 32px;
+}
+#chevron{position: absolute;
+right: 0;
+top: 30%;
+}
 /* fine footer bar */
