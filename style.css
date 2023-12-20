@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+}
+/* inizio top bar */
+.top-bar{
+    position: fixed;
+    display: flex;
+    right: 0;
+    top: 0;
+    gap: 10px;
+    z-index: 2;
+
+}
+#speaker_view{
+    display: flex;
+    padding: 7px;
+    background-color:rgba(128, 128, 128, 0.629);
+    border-radius: 5px;
+    gap: 6px;
+
+}
+#icona{
+    padding: 7px;
+    background-color:rgba(128, 128, 128, 0.629);
+    border-radius: 5px;
+}
+
+/* fine top bar */
+/* inizio main */
+#webcams{
+
+
+/* abbiamo inserito queste proprietà perchè volevamo incerire in modo centrato ed orinato il contenuto e tutte le webcam */
+display: flex;
+
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+/* è stato messo flex start perchè facendo cio possiamo visualizzare le webcam dalla prima mentre se inserivamo center ci centrava il contenuto andando a castrare il nostro contenuto */
+align-content: flex-start;
+gap: 16px 6px;
+
+/* inseriamo i 16px perchè ci permette di "chiudere la nostra viewport" e 110 perchè ci fa distanziare dal fondo della pagina e non ci fa coprire le webcam  */
+padding: 80px 16px 110px;
+}
+.webcam{
+    display: flex;
+    position: relative;
+   
+    /* test */
+
+}
+.microphone{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(128, 128, 128, 0.629);
+
+}
+/* fine main */
+/* inizio footer bar */
+#footer_bar{
+border: 2px dotted purple;
+height:100px ;
+/* test */
+position: fixed;
+bottom: 0;
+
+width: 100vw;
+
+}
+
+/* fine footer bar */
